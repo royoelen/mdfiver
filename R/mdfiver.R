@@ -6,7 +6,7 @@
 #' @return The location of the md5 checksum file
 #' @examples 
 #' md5_from_file_loc <- create_md5_for_file('~/file_contents.tsv.gz');
-#' md5_from_file_loc <- create_md5_for_file('~/file_contents.tsv.gz', '~/file_contents.tsv.gz.md5');;
+#' md5_from_file_loc <- create_md5_for_file('~/file_contents.tsv.gz', '~/file_contents.tsv.gz.md5');
 #' @export
 create_md5_for_file <- function(file_loc, md5_file_loc=NULL) {
   # setup the output
