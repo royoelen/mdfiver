@@ -3,3 +3,6 @@ Type: Package
 Title: Create md5 checksum files from supplied files
 Version: 0.0.0.1
 RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
