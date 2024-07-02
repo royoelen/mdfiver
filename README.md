@@ -13,7 +13,7 @@ install_github("https://github.com/royoelen/mdfiver");
 
 ## usage
 
-You can create an md5 checksum file using on of two function this library has
+You can create an md5 checksum file using one of two function this library has
 ```r
 md5_from_file_loc <- mdfiver::create_md5_for_file('~/big_binary.rds');
 ```
