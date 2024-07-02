@@ -19,5 +19,5 @@ Create md5 checksum files from supplied file
 }
 \examples{
 md5_from_file_loc <- create_md5_for_file('~/file_contents.tsv.gz');
-md5_from_file_loc <- create_md5_for_file('~/file_contents.tsv.gz', '~/file_contents.tsv.gz.md5');;
+md5_from_file_loc <- create_md5_for_file('~/file_contents.tsv.gz', '~/file_contents.tsv.gz.md5');
 }
