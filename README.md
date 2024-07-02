@@ -28,17 +28,17 @@ md5_from_file_loc <- mdfiver::create_md5_for_file('~/big_binary.rds', '~/big_bin
 
 To check an md5 against a file you can use the other method
 ```r
-md5_matches <- check_md5_file('~/big_binary.rds', md5_hash = '7aedffa4687d37d4007bbd8e7fcf000d');
+md5_matches <- mdfiver::check_md5_file('~/big_binary.rds', md5_hash = '7aedffa4687d37d4007bbd8e7fcf000d');
 ```
 
 
 You can also supply the file that has the md5
 ```r
-md5_matches <- check_md5_file('~/big_binary.rds', md5_file_loc = '~/big_binary.rds.md5');
+md5_matches <- mdfiver::check_md5_file('~/big_binary.rds', md5_file_loc = '~/big_binary.rds.md5');
 ```
 
 
 If you omit both the md5_hash and md5_file_loc, the md5 file is inferred to be the source file with '.md5' appended
 ```r
-md5_matches <- check_md5_file('~/big_binary.rds');
+md5_matches <- mdfiver::check_md5_file('~/big_binary.rds');
 ```
