@@ -4,14 +4,16 @@
 \alias{check_md5_file}
 \title{Check md5 checksum files}
 \usage{
-check_md5_file(file_loc, md5_file_loc = NULL, md5_hash = NULL)
+check_md5_file(file_loc, md5_file_loc = NULL, md5_hash = NULL, use_sha256 = F)
 }
 \arguments{
 \item{file_loc}{the file to create the md5 checksum file for}
 
-\item{md5_file_loc}{the location of the md5 checksum file to check against, defaults to the input file with .md5 appended to the end if neither this or the md5_hash parameters are supplied}
+\item{md5_file_loc}{the location of the md5 checksum file to check against, defaults to the input file with .md5 (or .sha256 if option is used) appended to the end if neither this or the md5_hash parameters are supplied}
 
 \item{md5_hash}{the md5 hash to check the file against, takes precedense over md5_file_loc parameter}
+
+\item{use_sha256}{use the more secure SHA256 checksum instead of md5}
 }
 \value{
 True if the hashes match, False if the hashes do not match

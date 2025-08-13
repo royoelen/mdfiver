@@ -4,12 +4,14 @@
 \alias{create_md5_for_file}
 \title{Create md5 checksum files}
 \usage{
-create_md5_for_file(file_loc, md5_file_loc = NULL)
+create_md5_for_file(file_loc, md5_file_loc = NULL, use_sha256 = F)
 }
 \arguments{
 \item{file_loc}{the file to create the md5 checksum file for}
 
-\item{md5_file_loc}{the location of the md5 checksum file to create, defaults to the input file with .md5 appended to the end}
+\item{md5_file_loc}{the location of the md5 checksum file to create, defaults to the input file with .md5 appended to the end (or .sha256 if that option is used)}
+
+\item{use_sha256}{use the more secure SHA256 checksum instead of md5}
 }
 \value{
 The location of the md5 checksum file

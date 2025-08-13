@@ -17,6 +17,17 @@ testthat::test_that("wrong hash supplied fails", {
   expect_equal(check_md5_file(file_loc = 'resources/mdfiver_nonemtpy.txt',
                               md5_hash = 'not_a_hash'), F)
 })
+# check if a supplied hash matches for sha256
+testthat::test_that("hash supplied matches", {
+  expect_equal(check_sha256_file(file_loc = 'resources/mdfiver_nonemtpy.txt',
+                              sha256_hash = '5a800fc66fb4400c2388835f75a831a794b6428d75b5cc385683958e4b45914f'), T)
+})
+# check if hash file matches
+testthat::test_that("hash file matches", {
+  expect_equal(check_sha256_file(file_loc = 'resources/mdfiver_nonemtpy.txt',
+                              sha256_file_loc =  'resources/mdfiver_nonemtpy.txt.sha256'), T)
+})
+# test errors that might be thrown
 testthat::test_that("errors", {
   # check for non-existant file
   testthat::expect_error(
