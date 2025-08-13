@@ -1,7 +1,7 @@
 Package: mdfiver
 Type: Package
 Title: Create md5 checksum files from supplied files
-Version: 0.0.0.2
+Version: 0.0.0.3
 RoxygenNote: 7.3.2
 Suggests: 
     testthat (>= 3.0.0)
