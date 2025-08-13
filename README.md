@@ -45,6 +45,6 @@ md5_matches <- mdfiver::check_md5_file('~/big_binary.rds');
 
 You can also use the newer SHA256 checksum format, by using the sha256 methods instead
 ```r
-sha256_from_file_loc <- mdfiver::create_md5_for_file('~/big_binary.rds', '~/big_binary.rds.sha256');
-sha256_matches <- mdfiver::check_md5_file('~/big_binary.rds', md5_file_loc = '~/big_binary.rds.sha256');
+sha256_from_file_loc <- mdfiver::create_sha256_for_file('~/big_binary.rds', '~/big_binary.rds.sha256');
+sha256_matches <- mdfiver::check_sha256_file('~/big_binary.rds', md5_file_loc = '~/big_binary.rds.sha256');
 ```
